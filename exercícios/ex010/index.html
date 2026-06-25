@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p> <!--o target e o rel servem para abrir o link em uma guia/janela externa ao do site, sem que o site em que está o link seja fechado ao abrir o outro. Existem outros tipos de rel-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar támbem a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p> <!--Quando é link interno não é necessário escrever a url inteira, ctrl+spaço aparece a outra página-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livros/LivroInfantilHTML.pdf" download="LivroInfantilHTML.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!--Para criar link vazio só por # dentro de href-->
+        <li><a href="livros/LivroInfantilHTML - Copia.zip" download="LivroInfantilHTML.zip" type="application/zip">Baixar o livro em ZIP</a></li>
+    </ul>
+</body>
+</html>

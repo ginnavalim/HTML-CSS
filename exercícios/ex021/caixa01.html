@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*BOX- LEVEL */
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;*/
+
+            border: 10px solid darkslategrey;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+
+            padding: 10px; /*quando iguais, se não, informe em sentido horário os valores, também pode ser informado dois valores sendo sla 10px a parte de cima e a de baixo e 20px a da direita e esquerda*/
+
+            /*margin: auto; serve para centralizar uma caixa
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px; serve para evitar sobreposição entre caixas*/
+            
+            margin: 20px 20px 40px 20px; /*se quiser centralizar pode colocar da seguinte forma, ex.: 20px (em cima), auto (direita), 40px (em baixo) e auto (esquerda)*/
+
+            /*pouco usado - o outline fica fora da borda e DENTRO da margem, pode extrapolar a margem mas se mantém dentro dela (?)
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;*/
+            outline: 5px dashed salmon;
+        }
+
+        a { /*INLINE-LEVEL*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkred;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom:10px;
+            padding-left: 10px;
+        }
+        /*Também pode ser invertido, você pode transformar a caixa do h1 em um inline-level (e claro retirar, pq n funciona em inline, o height e width) e transformar o <a> em um inline, ele n deixa de ser um, mas com características de bloco/caixa*/
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

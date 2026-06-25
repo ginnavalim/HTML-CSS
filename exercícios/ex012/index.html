@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!--<video src="midia/meu-video.ogv.ogv" width="500" controls></video>--> 
+    <!--O ogv não funcionou, provalmente o problema é no arquivo. Dica: coloque em todos os formatos: mp4, ogv,... pois nem sempre é compátivel com o navegador-->
+    <video width="560" poster="imagens/tumbnail.png" controls autoplay loop> <!--A imagem (poster) ta no tamanho errado, mas foi só para testar ent ta OK-->
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v.m4v" type="video/mp4">
+        <source src="midia/meu.video.webm.webm" type="video/webm">
+        <source src="midia/meu-video.ogv.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p> <!--Essa técnica é inviável pois consome muito trafego de dados podendo ficar muito caro para o cliente (mais detalhes na próxima aula)-->
+    </video>
+
+    <h1>Inserindo Vídeos do YouTube</h1> <!--Código tirado de compartilhar no yt, pra funcionar no site tive abrir usando uma extensão do VScode-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_SqC3_B4czc?si=5TUfJrjw7U254WBe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--Vimeo hospedagem para sla vídeos que tu querque apenas assinantes tenham acesso recomendação do prof mas existem outros-->
+</body>
+</html>

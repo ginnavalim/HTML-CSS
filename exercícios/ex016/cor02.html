@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /* Configurações globais das CSS, se n o to top fica que nem zebra em listras ao invés da tela inteira, fiz testes de acessibilidade para os tons de fundo escolhidos para o tom da fonte (preta) */
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to top, #FFE2FE, #AFB3F7); /*radial-gradiant (circle...), pode ser colocado porcentagem seguido da cor para decidir quanto do espaço será ocupado*/
+            background-attachment: fixed; /*serve para não ficar com uma listra em baixo quando a tela rola, ficando fixa*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1> <!--Dá pra colocar ao invés de to right ser 90deg (ou outro variando da direção que tu preferir), to top, to bottom,...-->
+</body>
+</html>
